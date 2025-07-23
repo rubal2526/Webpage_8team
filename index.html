@@ -1,13 +1,71 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>팀 소개 페이지 분할 및 이미지 배경 적용</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 팀을 소개합니다!</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <header>
+        <div id="team-logo">
+            <!-- hamster.png 이미지가 배경으로 표시됩니다 -->
+        </div>
+        <h1>8조</h1>
+
+        <div class="team-title">팀원 소개</div>
+        <div class="team-desc">작지만 강한 열정으로 굴러가는 햄스터 팀입니다.<br>함께 성장하며 도전하는 네 명의 팀원을 소개합니다.</div>
+	</header>
+	<main>
+        
+        <div class="team-container">
+            <!-- 중앙 쳇바퀴 -->
+            <div class="wheel-center">
+                <div class="wheel-background"></div>
+                <div class="hamster-image"></div>
+            </div>
+            
+            <!-- 12시 방향 -->
+            <div class="member-card card-12">
+                <div class="member-emoji">🦁</div>
+                <div class="member-name">김주윤</div>
+                <div class="member-desc">팀을 이끄는 리더입니다.<br>긍정적인 에너지로 팀을 이끌어 갑니다.</div>
+                <div class="member-strength">리더십 & 소통</div>
+            </div>
+            
+            <!-- 2시 방향 -->
+            <div class="member-card card-2">
+                <div class="member-emoji">🐱</div>
+                <div class="member-name">한송이</div>
+                <div class="member-desc">끊임없이 새로운 기술을<br>탐구하는 열정적인 개발자입니다.</div>
+                <div class="member-strength">기술력 & 창의성</div>
+            </div>
+            
+            <!-- 5시 방향 -->
+            <div class="member-card card-5">
+                <div class="member-emoji">🐰</div>
+                <div class="member-name">이옥렬</div>
+                <div class="member-desc">사용자 경험을 최우선으로<br>생각하는 섬세한 디자이너입니다.</div>
+                <div class="member-strength">UX/UI & 감성</div>
+            </div>
+            
+            <!-- 7시 방향 -->
+            <div class="member-card card-7">
+                <div class="member-emoji">🐻</div>
+                <div class="member-name">손민정</div>
+                <div class="member-desc">빈틈없는 계획과 분석 능력을<br>갖춘 꼼꼼한 기획자입니다.</div>
+                <div class="member-strength">전략 & 분석력</div>
+            </div>
+            
+            <!-- 10시 방향 -->
+            <div class="member-card card-10">
+                <div class="member-emoji">🐹</div>
+                <div class="member-name">정기정</div>
+                <div class="member-desc">작지만 강한 열정으로<br>굴러가는 우리 팀!</div>
+                <div class="member-strength">팀워크 & 열정</div>
+            </div>
+        </div>
+    </main>
+    <script src="team.js"></script>
+</body>
 </html>
